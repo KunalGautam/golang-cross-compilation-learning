@@ -16,10 +16,10 @@ jobs:
       - name: Checkout the repository
         uses: actions/checkout@v2
       - name: Generate build files
-        uses: thatisuday/go-cross-build@v1.1.0
+        uses: thatisuday/go-cross-build@v1
         with:
-            platforms: 'linux/amd64, linux/arm64, linux/arm/v6, linux/arm/v7, darwin/amd64, windows/amd64'
-            package: 'ikunal.in'
+            platforms: 'linux/amd64, darwin/amd64, windows/amd64'
+            package: 'demo'
             name: 'program'
             compress: 'true'
             dest: 'dist'
