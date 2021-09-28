@@ -18,6 +18,5 @@ jobs:
       - name: Generate build files
         uses: thatisuday/go-cross-build@v1.1.0
         with:
-            platforms: 'linux/amd64, linuxarm, linux/arm64, darwin/amd64, windows/amd64'
             name: kunal
             dest: dist
