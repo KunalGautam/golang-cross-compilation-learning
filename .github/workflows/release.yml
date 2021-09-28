@@ -16,10 +16,10 @@ jobs:
       - name: Checkout the repository
         uses: actions/checkout@v2
       - name: Generate build files
-        uses: thatisuday/go-cross-build@v1
+        uses: thatisuday/go-cross-build@v1.16
         with:
             platforms: 'linux/amd64, linuxarm, linux/arm64, darwin/amd64, windows/amd64'
-            package: 'demo'
-            name: 'program'
+            package: 'github.com/KunalGautam/golang-cross-compilation-learning'
+            name: 'kunal'
             compress: 'true'
             dest: 'dist'
