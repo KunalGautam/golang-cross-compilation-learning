@@ -19,7 +19,7 @@ jobs:
         uses: thatisuday/go-cross-build@v1.0.2
         with:
             platforms: 'linux/amd64, linuxarm, linux/arm64, darwin/amd64, windows/amd64'
-            package: ./
+            package: ''
             name: 'kunal'
             compress: 'false'
             dest: 'dist'
